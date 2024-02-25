@@ -22,7 +22,7 @@
 
 .align-center {
     align-items: center;
-    
+
 }
 
 .column {
@@ -53,7 +53,7 @@ header {
 }
 
 .rounded {
-   border-radius: 20px;
+    border-radius: 20px;
 }
 
 .rounded-2 {
@@ -80,12 +80,12 @@ header {
 
 /* PLANNING */
 
-#planning .right{
+#planning .right {
     background-color: rgb(255, 255, 255);
 }
 
 #planning .left {
-    background-color:rgb(149,147,230);
+    background-color: rgb(149, 147, 230);
 }
 
 #planning img {
@@ -105,11 +105,11 @@ header {
 }
 
 #testimonial .card {
-    background-color: rgb(149,147,230);
+    background-color: rgb(149, 147, 230);
 }
 
 #benefits {
-    background-color: rgb(149,147,230);
+    background-color: rgb(149, 147, 230);
 }
 
 #benefits .card {
@@ -128,10 +128,20 @@ header {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 768px) {
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .features .card {
+        width: calc(100% / 3);
+    }
+
+    #first-card {
+        width: calc(100% / (3/2));
+    }
 }
 
-@media screen and (min-width: 1200px){
-    
-}
+@media screen and (min-width: 1200px) {}
